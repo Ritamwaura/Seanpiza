@@ -149,6 +149,18 @@
                     <option value="beef">Beef Peperoni @ sh. 170</option>
                     <option value="chicken">Periperi Chicken @ sh. 170</option>
                 </select>
+                <label for="number">Number of Pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+                <br><label for="delivery">Delivery</label> <br>
+                <div class="custom-control custom-checkbox custom-control-inline" id="delivery">
+                    <input type="radio" class="custom-control-input" id="deliver" value="yes" name="delivery">
+                    <label class="custom-control-label" for="deliver">Deliver Pizza</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="dont-deliver" value="no" name="delivery">
+                    <label class="custom-control-label" for="dont-deliver">No delivery</label>
+                </div>
             </form>
             <button type="submit" class="btn btn-success checkout">Checkout</button>
 
