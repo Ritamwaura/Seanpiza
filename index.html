@@ -72,6 +72,9 @@
                 <h1 class="text-center txt">Karibu <span class="pizz">Pizza </span><span class="exc">pap!</span></h1>
                 <p class="text-center txt">The best pizza you'll ever taste</p>
                 <p class="text-center txt">Order your pizza and we wil deliver it to your location.</p>
+                <a href="#menus">
+                    <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                </a>
             </div>
         </div>
     </div>
@@ -84,32 +87,34 @@
         <div class="pizza-menu row text-center">
             <figure class="col-sm-4">
                 <img src="images/2.png" alt="small-pizza" class="rollerRight">
-                <figcaption class="text-white">Small</figcaption>
+                <figcaption class="text-white">Small<br>Ksh. 300</figcaption>
             </figure>
             <figure class="col-sm-4">
                 <img src="images/1.png" alt="medium-pizza" class="rubberBand">
-                <figcaption class="text-white">Medium</figcaption>
+                <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
             </figure>
             <figure class="col-sm-4">
                 <img src="images/3.png" alt="large-pizza" class="rollerLeft">
-                <figcaption class="text-white">Large</figcaption>
+                <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
             </figure>
         </div>
     </div>
 </div>
 
 <div class="orders" id="order">
-    <h1 class="text-center rubberBand">Order Pizza</h1>
+    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
     <div class="form-group col-offset-6 col-md-6 text-center mx-auto">
-        <label for="pizza-type" class="labels">Pizza type</label>
-        <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-type" required min="0"
-               max="30">
-        <label for="pizza-amount" class="labels">Number of pizza</label>
-        <input type="number" class="form-control" placeholder="Enter the pizza type" id="pizza-amount" required min="0"
-               max="30">
-        <label for="pizza-topping" class="labels">Type of topping</label>
-        <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-topping" required min="0"
-               max="30">
+       <div class="order-overlay">
+           <label for="pizza-type" class="labels">Pizza type</label>
+           <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-type" required min="0"
+                  max="30">
+           <label for="pizza-amount" class="labels">Number of pizza</label>
+           <input type="number" class="form-control" placeholder="Enter the pizza type" id="pizza-amount" required min="0"
+                  max="30">
+           <label for="pizza-topping" class="labels">Type of topping</label>
+           <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-topping" required min="0"
+                  max="30">
+       </div>
     </div>
 </div>
 <!--End Content-->
