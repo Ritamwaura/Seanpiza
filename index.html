@@ -46,7 +46,7 @@
         </div>
         <div class="h-buttons text-center">
             <a href="#welcome">
-                <button class="btn bg-info floater  infinite delay-2s">Order</button>
+                <button class="btn bg-info floater  infinite delay-2s">Go</button>
             </a>
             <div class="socials">
                 <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
@@ -81,20 +81,22 @@
 </div>
 <!--Start Content-->
 
-<div class="menu col-md-12" id="menus">
+<div id="menus"></div>
+<br>
+<div class="menu col-md-12">
     <div class="menu-overlay">
         <h1 class="text-center text-white" id="menu">Menu</h1>
         <div class="pizza-menu row text-center">
             <figure class="col-sm-4">
-                <img src="images/2.png" alt="small-pizza" class="rollerRight">
-                <figcaption class="text-white">Small<br>Ksh. 300</figcaption>
+                <img src="images/2.png" alt="small-pizza" class="wiggle">
+                <figcaption class="text-white">Regular<br>Ksh. 300</figcaption>
             </figure>
             <figure class="col-sm-4">
-                <img src="images/1.png" alt="medium-pizza" class="rubberBand">
+                <img src="images/1.png" alt="medium-pizza" class="wiggle">
                 <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
             </figure>
             <figure class="col-sm-4">
-                <img src="images/3.png" alt="large-pizza" class="rollerLeft">
+                <img src="images/3.png" alt="large-pizza" class="wiggle">
                 <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
             </figure>
         </div>
@@ -103,18 +105,54 @@
 
 <div class="orders" id="order">
     <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-    <div class="form-group col-offset-6 col-md-6 text-center mx-auto">
-       <div class="order-overlay">
-           <label for="pizza-type" class="labels">Pizza type</label>
-           <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-type" required min="0"
-                  max="30">
-           <label for="pizza-amount" class="labels">Number of pizza</label>
-           <input type="number" class="form-control" placeholder="Enter the pizza type" id="pizza-amount" required min="0"
-                  max="30">
-           <label for="pizza-topping" class="labels">Type of topping</label>
-           <input type="text" class="form-control" placeholder="Enter the pizza type" id="pizza-topping" required min="0"
-                  max="30">
-       </div>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Pick your pizza Flavour:</label>
+                <select class="custom-select custom-select-md mb-3">
+                    <option value="Veg Tikka">Veg Tikka</option>
+                    <option value="Chicken Tikka">Chicken Tikka</option>
+                    <option value="Peri-Peri Chicken">Peri-Peri Chicken</option>
+                    <option value="BBQ Steak">BBQ Steak</option>
+                    <option value="Boerewors">Boerewors</option>
+                    <option value="Hawaiian">Hawaiian</option>
+                    <option value="Chicken and Mushroom">Chicken and Mushroom</option>
+                    <option value="Regina Pizza">Regina Pizza</option>
+                </select>
+                <label>Chose your preferred Size:</label>
+                <select class="custom-select custom-select-md mb-3" id="size">
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="crust">Choose your favorite Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust">
+                    <option value="Crispy">Crispy -- sh. 200</option>
+                    <option value="Stuffed">Stuffed -- sh. 150</option>
+                    <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                </select>
+                <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings">
+                    <option value="tomato">Tomato</option>
+                    <option value="onions">Onions</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="green Pepper">Green Pepper</option>
+                    <option value=""></option>
+                    <option value="olives">Olives</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="sweetcorn">Sweet Corn</option>
+                    <option value="macon">Macon</option>
+                    <option value="mince">Mince</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni</option>
+                    <option value="chicken">Periperi Chicken</option>
+                </select>
+            </form>
+            <button type="submit" class="btn btn-success checkout">Checkout</button>
+
+        </div>
+        <div class="col-sm-2"></div>
     </div>
 </div>
 <!--End Content-->
