@@ -1,28 +1,29 @@
-var flavour, size, crust, topping, number, del_mode;
-
 $(function () {
 //Get inputs
     $("button.proceed").click(function (event) {
-        flavour = $(".flavour option:selected").val();
-        size = $("#size option:selected").val();
-        crust = $("#crust option:selected").val();
-        topping = $("#toppings option:selected").val();
+        let flavour = $(".flavour option:selected").val();
+        let size = $("#size option:selected").val();
+        let crust = $("#crust option:selected").val();
+        let topping = $("#toppings option:selected").val();
+        let number = $("#number").val();
         let delivery_mode = [];
         $.each(("input[name ='delivery']:checked"), () => {
             delivery_mode.push($(this).val());
-            del_mode = JSON.parse(JSON.stringify(delivery_mode));
+            let del_mode = JSON.parse(JSON.stringify(delivery_mode));
+            console.log(del_mode);
         });
-        let order = (f, c, t, n, d) => {
+        let order = (f, s, c, t, n, d) => {
             return {
                 f,
+                s,
                 c,
                 t,
                 n,
                 d
             };
         };
-        console.log(del_mode);
-        let newOrder = order(flavour, crust, topping, number, del_mode);
+
+        let newOrder = order(flavour, size, crust, topping, number, del_mode);
         console.log(newOrder);
     });
 
