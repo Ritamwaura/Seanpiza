@@ -1,15 +1,16 @@
 # Pizza pap!
+[Check it out](https://kamauvick.github.io/Pizza-App/)
 
-## Description 
+## Description: 
 A pizza ordering web application.
 
-## Author
+## Author:
 > Victor Waichigo
 
-## Screenshot
+## Screenshot:
 <img src="images/shot.png" width="1000">
 
-## Setup
+## Setup:
 `git clone https://github.com/kamauvick/Pizza-App.git` or download the zip file
 
 Extract the zip file
@@ -18,14 +19,14 @@ Extract the zip file
 
 `launch` the index.html file
 
-## Technologies
+## Technologies:
 * HTML5
 * CSS3
 * Bootstrap
 * Javascript
 * Jquery
 
-## BDD
+## BDD:
 | Inputs |  Description |
 | :---         |          ---: |
 | Pizza Flavour   | `eg chicken-tikka`|
@@ -35,8 +36,8 @@ Extract the zip file
 | Number of pizzas   | `eg 6`   |
 | Delivery mode   | `eg No delivery`   |
 
-## License
+## License:
 >MIT LICENSE &copy; 2019 Victor
 
-## Collaborate
-To contribute to Pizza pap!, reach me on [Email](waichigovick@gmail.com).
+## Collaborate:
+To contribute to Pizza pap!, reach me on `waichigovick@gmail.com`.
