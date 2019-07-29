@@ -1,5 +1,5 @@
 $(function () {
-$('.summary').hide();
+    $('.summary').hide();
 //Get inputs
     $("#checkout").click(function () {
         let flavour = $(".flavour option:selected").val();
@@ -11,18 +11,11 @@ $('.summary').hide();
 
         //Function order
         let order = (f, s, c, t, n, total) => {
-            return {
-                f,
-                s,
-                c,
-                t,
-                n,
-                total
-            };
+            return {f, s, c, t, n, total };
         };
 
         //check price
-        let price, totalPrice, toppingPrice;
+        let price, totalPrice;
         switch (flavour) {
             case flavour = "vegtikka":
                 switch (size) {
@@ -370,7 +363,7 @@ $('.summary').hide();
             case topping = "macon":
                 totalPrice = totalPrice + 120;
                 break;
-            case topping  = "mince":
+            case topping = "mince":
                 totalPrice = totalPrice + 120;
                 break;
             case topping = "beef":
@@ -387,13 +380,17 @@ $('.summary').hide();
         console.log(newOrder); // test func
 
         // let myOrder = JSON.stringify(JSON.parse(newOrder));
-        $('.summary').slideDown('slow');
+        $('.summary').slideDown(2000);
+        $('#list').text(" ");
         $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
             + newOrder.s + "<br>" + "Crust :     "
             + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Number of pizzas :     "
+            + newOrder.t + "<br>" + " Number of pizzas :    "
             + newOrder.n + "<br>" + "Total Price :  "
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
+    $(function() {
+        $.scrollify.move('#sum-order');
+    });
 });
