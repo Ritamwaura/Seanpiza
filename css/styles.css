@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: #ffffff;
 }
 
 #spantext {
@@ -60,6 +61,9 @@ figcaption{
 
 #menu {
     padding-top: 20px;
+}
+#order-pizza{
+    color: #000;
 }
 
 #order-pizza {
@@ -144,6 +148,12 @@ figure img {
 }
 
 .txt {
+    font-family: system-ui, cursive;
+    color: black;
+    font-size: 23px;
+}
+.txt-big{
+    font-size: 50px;
     font-family: 'Shadows Into Light', cursive;
 }
 
