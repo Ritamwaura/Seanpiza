@@ -69,7 +69,8 @@
                 <img src="images/sec/ab1.png" alt="chef-cartoon" class="karibu-img">
             </div>
             <div class="col-md-6 karibu-txt">
-                <h1 class="text-center txt txt-big">Karibu <span class="pizz">Pizza </span><span class="exc">pap!</span></h1>
+                <h1 class="text-center txt txt-big">Karibu <span class="pizz">Pizza </span><span class="exc">pap!</span>
+                </h1>
                 <p class="text-center txt">The best pizza you'll ever taste</p>
                 <p class="text-center txt">Order your pizza and we wil deliver it to your location.</p>
                 <a href="#menus">
@@ -141,7 +142,7 @@
                     <option value="greenpepper">Green Pepper @ sh. 80</option>
                     <option value=""></option>
                     <option value="olives">Olives @ sh. 120</option>
-                    <option value="pineapple">Pineapple  @ sh. 120</option>
+                    <option value="pineapple">Pineapple @ sh. 120</option>
                     <option value="sweetcorn">Sweet Corn @ sh. 120</option>
                     <option value="macon">Macon @ sh. 120</option>
                     <option value="mince">Mince @ sh. 120</option>
@@ -150,19 +151,15 @@
                     <option value="chicken">Periperi Chicken @ sh. 170</option>
                 </select>
                 <label for="number">Number of Pizza's</label>
-                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
 
-                <br><label for="delivery">Delivery Mode</label> <br>
-                <div class="custom-control custom-checkbox custom-control-inline" id="delivery">
-                    <input type="radio" class="custom-control-input" id="deliver" value="yes" name="delivery" required>
-                    <label class="custom-control-label" for="deliver">Deliver Pizza</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                    <input type="radio" class="custom-control-input" id="dont-deliver" value="no" name="delivery" required>
-                    <label class="custom-control-label" for="dont-deliver">No delivery</label>
-                </div>
+
             </form>
-            <a href="#summary"><button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button></a>
+            <a href="#summary">
+                <button type="submit" class="btn btn-success checkout" id="checkout" onclick="validateInput()">
+                    Checkout
+                </button>
+            </a>
 
         </div>
         <div class="col-sm-2"></div>
@@ -174,6 +171,25 @@
     <h2 class="text-center summary">Hello there, your order is as follows:</h2>
     <ol id="list" class="text-center sum">
     </ol>
+
+
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data">
+                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+            </form>
+
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button class='deliver'>Make Delivery</button>
+        <button class='delivernot'>Pick Up</button>
+    </div>
 </div>
 
 <div class="contacts">
@@ -187,7 +203,8 @@
                 <form>
                     <div class="email-info">
                         <div class="form-group fill-all-form">
-                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email" required="">
+                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                   required="">
                         </div>
                     </div>
                     <div class=" email-info text-center">
