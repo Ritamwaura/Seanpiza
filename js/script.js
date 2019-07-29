@@ -1,5 +1,5 @@
 $(function () {
-
+$('.summary').hide();
 //Get inputs
     $("#checkout").click(function () {
         let flavour = $(".flavour option:selected").val();
@@ -387,6 +387,7 @@ $(function () {
         console.log(newOrder); // test func
 
         // let myOrder = JSON.stringify(JSON.parse(newOrder));
+        $('.summary').slideDown('slow');
         $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
             + newOrder.s + "<br>" + "Crust :     "
             + newOrder.c + "<br>" + "Toppings :     "
