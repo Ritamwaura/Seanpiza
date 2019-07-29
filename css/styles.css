@@ -65,6 +65,10 @@ figcaption{
 #order-pizza{
     color: #000;
 }
+#list li{
+    font-size: 24px;
+    font-family: system-ui, serif;
+}
 .order-summary h1, .summary{
     color: #000;
     font-family: 'Love Ya Like A Sister', cursive;
