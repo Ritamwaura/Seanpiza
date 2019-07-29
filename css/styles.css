@@ -69,10 +69,56 @@ figcaption{
     font-size: 24px;
     font-family: system-ui, serif;
 }
-.order-summary h1, .summary{
+.order-summary h1, .summary, .contact{
     color: #000;
     font-family: 'Love Ya Like A Sister', cursive;
     margin-top: 30px;
+}
+.contacts{
+    background-image: url("../images/sec/b1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-overlay{
+    height: inherit;
+    background-color: rgba(0,0,0,0.7);
+}
+input[type="email"] {
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: .8em .7em;
+    border-radius: 20px;
+    outline: none !important;
+    font-size: 14px;
+}
+.click-me{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.get-pizza{
+    margin-top: 40px;
+}
+.contact{
+    padding-top: 20px;
+}
+.click-me, button[type=submit] {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #ffbf00;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 14px;
+}
+h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 #order-pizza {
