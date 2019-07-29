@@ -65,6 +65,11 @@ figcaption{
 #order-pizza{
     color: #000;
 }
+.order-summary h1, .summary{
+    color: #000;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top: 30px;
+}
 
 #order-pizza {
     padding: 20px 50px 20px 50px;
@@ -80,6 +85,9 @@ figcaption{
 .checkout{
     border-radius: 20px;
     margin-top: 20px;
+}
+#list{
+    color: #000;
 }
 .pizz {
     color: lawngreen;
