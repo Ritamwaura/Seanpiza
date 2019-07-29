@@ -385,6 +385,11 @@ $(function () {
 
         //Write to the order
         $('.summary').slideDown(2000);
+        $('.cdata-overlay').slideUp();
+        $('#list').slideDown();
+        $('.deliver').show(1000);
+        $('.delivernot').show(1000);
+
         $('#list').text(" ");
         $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
             + newOrder.s + "<br>" + "Crust :     "
