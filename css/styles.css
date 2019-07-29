@@ -55,34 +55,41 @@ li {
     margin-top: 20px;
     color: #000;
 }
-figcaption{
+
+figcaption {
     font-family: 'Oswald', serif;
 }
 
 #menu {
     padding-top: 20px;
 }
-#order-pizza{
+
+#order-pizza {
     color: #000;
 }
-#list li{
+
+#list li {
     font-size: 24px;
     font-family: system-ui, serif;
 }
-.order-summary h1, .summary, .contact{
+
+.order-summary h1, .summary, .contact {
     color: #000;
     font-family: 'Love Ya Like A Sister', cursive;
     margin-top: 30px;
 }
-.contacts{
+
+.contacts {
     background-image: url("../images/sec/b1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contact-overlay{
+
+.contact-overlay {
     height: inherit;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
 input[type="email"] {
     background: transparent;
     border: 1px solid #ffffff;
@@ -91,17 +98,36 @@ input[type="email"] {
     outline: none !important;
     font-size: 14px;
 }
-.click-me{
+
+.click-me {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.get-pizza{
+
+.get-pizza {
     margin-top: 40px;
 }
-.contact{
+
+.contact {
     padding-top: 20px;
 }
-.click-me, button[type=submit] {
+
+.cdata {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.data {
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.go {
+    border-radius: 20px;
+}
+
+.click-me, button[type=submit], .deliver, .delivernot {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -114,7 +140,12 @@ input[type="email"] {
     border-radius: 33px;
     font-size: 14px;
 }
-h4{
+
+.deliver, .delivernot {
+    margin: 10px;
+}
+
+h4 {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -132,13 +163,16 @@ h4{
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
 }
-.checkout{
+
+.checkout {
     border-radius: 20px;
     margin-top: 20px;
 }
-#list{
+
+#list {
     color: #000;
 }
+
 .pizz {
     color: lawngreen;
 }
@@ -210,7 +244,8 @@ figure img {
     color: black;
     font-size: 23px;
 }
-.txt-big{
+
+.txt-big {
     font-size: 50px;
     font-family: 'Shadows Into Light', cursive;
 }
@@ -222,13 +257,16 @@ figure img {
     height: 400px;
     width: 400px;
 }
+
 .welcome {
     padding-top: 30px;
 }
-.rads{
+
+.rads {
     display: flex;
     flex-wrap: wrap;
 }
+
 .fab {
     margin: 60px 15px 0 15px;
 }
@@ -279,6 +317,10 @@ figure img {
 
     .welcome {
         padding-top: 10px;
+    }
+
+    .cdata {
+        padding: 10px 5px 10px 5px;
     }
 
 }
