@@ -39,4 +39,4 @@ Extract the zip file
 >MIT LICENSE &copy; 2019 Victor
 
 ## Collaborate
-To contribute to Delani studio, reach me on [Email](waichigovick@gmail.com).
+To contribute to Pizza pap!, reach me on [Email](waichigovick@gmail.com).
