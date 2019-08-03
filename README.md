@@ -1,7 +1,7 @@
 # Pizza pap!
 [Check it out](https://kamauvick.github.io/Pizza-App/)
 
-![GitHub](https://img.shields.io/github/license/Kamauvick/pizza-app)
+![GitHub]()
 ## Description: 
 A pizza ordering web application.
 
